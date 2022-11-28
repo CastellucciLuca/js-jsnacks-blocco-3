@@ -4,4 +4,4 @@ let userNumber = 0;
 while((userNumber < 1) || (userNumber > 10)){
     userNumber =  parseInt(prompt("Inserisci un numero da 1 a 10"));
 }
-console.log(userNumber)
+console.log(userNumber);
