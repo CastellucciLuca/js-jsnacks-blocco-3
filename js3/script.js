@@ -22,9 +22,9 @@ const arrayTwo = [
 // AGGIUNGO ELEMENTI ALL'ARRAY FINCHE NON DIVENTANO EQUAMENTE UGUALI
 while (arrayOne.length != arrayTwo.length){
     if (arrayOne.length < arrayTwo.length){
-        arrayOne.push('filler');
+        arrayOne.push('filler element');
     } else if (arrayOne.length > arrayTwo.length){
-        arrayTwo.push('filler');
+        arrayTwo.push('filler element');
     }
 }
 
