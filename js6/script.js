@@ -6,7 +6,7 @@ const array = ['Hello', 2, 55, 'Luca', 24];
 function sumArray (array) {
     let sum = 0;
     for (let i = 0; i < array.length; i++) {
-        if( !(Number.isNaN( parseInt(array[i], 10)) ) ) {
+        if( !(Number.isNaN( parseInt(array[i])) ) ) {
             sum += array[i];
         }
     }
