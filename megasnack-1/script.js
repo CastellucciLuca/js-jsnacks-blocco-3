@@ -13,26 +13,22 @@
 // ciclo per ogni elemento dell'array
 // se l'elemento è un numero pari, crei nuovo elemento e lo aggiungo al div verde
 // se l'elemento è un numero dispari, creo  nuovo elemento e lo aggiungo al div rosso
-const array = [1, 33, 55, 64, 33, 22, 10, 44];
-
-const odd = document.getElementById("red");
-const even = document.getElementById("green");
-
-function createElement(){
-
-    pElement = document.createElement("p");
-    return pElement;
+const divElementGreen = document.getElementById('green');
+const divElementRed = document.getElementById("red");
+//FUNZIONE IMPORTANTE----
+function createNewElementP(array,[i]){
+    const newElement = document.createElement('p');
+    newElement.innerText = array[i];
+    return newElement;
 }
 
-for(let i = 0; i < array.length; i++){
-    
-    let p = createElement();
-    
-    if(array[i] % 2 == 1){
-        odd.append(p);
-        p.append(array[i]);
-    }else{
-        even.append(p);
-        p.append(array[i])
+const array = [1,33,55,64,33,22,10,44,88, 22, 7];
+
+for (let i=0; i<array.length; i++){
+    if (array[i] % 2 === 0){
+        divElementGreen.appendChild(createNewElementP(array,[i]));
+    }
+    else {
+        divElementRed.appendChild(createNewElementP(array,[i]));
     }
 }
